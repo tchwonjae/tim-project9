@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Tyrannosaurus.css">
+    <script src="js/Dinosaurs.js"></script>
+    <style>
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.8); /* 투명도 조절 */
+            width: 100%;
+            padding: 10px;
+            display: none; /* 기본적으로 숨김 처리 */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Mezosoic Edene</h1>
+        <nav>
+          <ul class="dropmenu">
+            <li><a href="#">Home</a>
+             
+            </li>
+            <li><a href="#">Dinosaurs</a>
+              <div class="subwrap">
+                <ul class="sub">
+                  <li><a href="#">Apatosaurus</a></li>
+                  <li><a href="#">Velociraptor</a></li>
+                  <li><a href="#">Stegosaurus</a></li>
+                  <li><a href="#">Triceratops</a></li>
+                  <li><a href="#">Tyrannosaurus</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Employee</a>
+              <div class="subwrap">
+                <ul class="sub">
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Planning</a></li>
+                  <li><a href="#">Safety</a></li>
+                  <li><a href="#">M.O.E</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="app">
+        <!-- 아파토사우르스 객체를 표시하는 코드 추가 -->
+        <div class="card charizard">
+          <div class="card-description">
+              <h2 th:text="#">돌리 엄마</h2>
+              <p th:text="#">Tyrannosaurus</p>
+              <p th:text="#">식성: 초식</p>
+              <p th:text="#">길이: 5m</p>
+              <p th:text="#">무게: 12t</p>
+          </div>
+        </div>
+
+      <div class="card pika">
+          <div class="card-description">
+            <h2 th:text="#">돌리 아빠</h2>
+            <p th:text="#">Tyrannosaurus</p>
+            <p th:text="#">식성: 초식</p>
+            <p th:text="#">길이: 5m</p>
+            <p th:text="#">무게: 8t</p>
+        </div>
+      </div>
+      
+    <div class="card mewtwo">
+        <div class="card-description">
+            <h2 th:text="#">돌리 증조부</h2>
+            <p th:text="#">Tyrannosaurus</p>
+            <p th:text="#">식성: 초식</p>
+            <p th:text="#">길이: 4m</p>
+            <p th:text="#">무게: 6t</p>
+        </div>
+    </div>
+    
+  <div class="card eevee">
+      <div class="card-description">
+          <h2 th:text="#">돌리</h2>
+          <p th:text="#">Tyrannosaurus</p>
+          <p th:text="#">식성: 초식</p>
+          <p th:text="#">길이: 6m</p>
+          <p th:text="#">무게: 9t</p>
+      </div>
+  </div>
+</div>
+</main>
+</body>
+</html>

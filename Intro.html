@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesozoic Eden Park</title>
+  
+  <!-- 구글 웹 폰트 import -->
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    #video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      background-size: cover;
+    }
+
+    h1 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem; /* 글꼴 크기 조정 */
+      font-family: 'Lemon', sans-serif; /* Lemon 폰트 적용 */
+      color: yellowgreen;
+    }
+
+    .link {
+  position: absolute;
+  top: 50%; /* 이전에는 기본적으로 텍스트 위에 위치하도록 설정되어 있습니다. */
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 40px 90px;
+  background-color: transparent;
+  color: yellowgreen;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 3rem;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+
+
+  </style>
+</head>
+
+<body>
+ <!-- 비디오 -->
+ <section class="video_section position-relative">
+  <video autoplay loop muted id="video-background">
+    <source src="Dinosaur.mp4/Dinosaur.mp4" type="video/mp4">
+  </video>
+
+  <!-- 가운데 텍스트 -->
+  <section>
+    <h1 class="">
+      Mesozoic Eden Park
+    </h1>
+    <div>
+      <a href="Main.html" class="link">
+        Would you like to enter?
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
